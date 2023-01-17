@@ -6,10 +6,10 @@ Module.register("MMM-Wallpaper", {
     source: "bing",
     updateInterval: 60 * 60 * 1000,
     slideInterval: 5 * 60 * 1000,
-    maximumEntries: 10,
+    maximumEntries: 0,
     filter: "grayscale(0.5) brightness(0.5)",
     orientation: "auto",
-    caption: true,
+    caption: false,
     crossfade: true,
     maxWidth: Number.MAX_SAFE_INTEGER,
     maxHeight: Number.MAX_SAFE_INTEGER,
@@ -22,7 +22,7 @@ Module.register("MMM-Wallpaper", {
     width: "auto",
     height: "auto",
     flickrApiKey: "",
-    fadeEdges: false,
+    fadeEdges: true,
   },
 
   getStyles: function() {
@@ -144,7 +144,7 @@ Module.register("MMM-Wallpaper", {
       self.title.style.display = "none";
 
       setTimeout(() => {
-        var caption = imageData.caption;
+        var caption = " ";
         if (self.config.caption && caption) {
           self.title.innerHTML = caption;
           self.title.style.display = "initial";

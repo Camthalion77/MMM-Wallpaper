@@ -192,7 +192,6 @@ module.exports = NodeHelper.create({
         if (dirent[0] !== '.' && dirent.toLowerCase().match(/\.(?:a?png|avif|gif|p?jpe?g|jfif|pjp|svg|webp|bmp)$/) !== null) {
           images.push({
             url: `${urlPath}${dirent}`,
-            caption: dirent,
           });
         }
       }
@@ -492,7 +491,7 @@ module.exports = NodeHelper.create({
 
         const module = (url.protocol === "http:") ? http : https;
         const preq = module.request(options, (pres) => {
-          ores.writeHead(pres.statusCode, pres.headers);
+          ores.writeHead(pres.status, pres.headers);
           pres.on("data", (chunk) => { ores.write(chunk); });
           pres.on("close", () => { ores.end(); });
           pres.on("end", () => { ores.end(); });
