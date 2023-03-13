@@ -10,7 +10,7 @@ Module.register("MMM-Wallpaper", {
     filter: "grayscale(0) brightness(1)",
     orientation: "auto",
     caption: false,
-    crossfade: false,
+    crossfade: true,
     maxWidth: Number.MAX_SAFE_INTEGER,
     maxHeight: Number.MAX_SAFE_INTEGER,
     nsfw: true,
@@ -22,7 +22,7 @@ Module.register("MMM-Wallpaper", {
     width: "auto",
     height: "auto",
     flickrApiKey: "",
-    fadeEdges: true,
+    fadeEdges: false,
   },
 
   getStyles: function() {
