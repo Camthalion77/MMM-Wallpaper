@@ -10,7 +10,7 @@ Module.register("MMM-Wallpaper", {
     filter: "grayscale(0) brightness(1)",
     orientation: "auto",
     caption: false,
-    crossfade: true,
+    crossfade: false,
     maxWidth: Number.MAX_SAFE_INTEGER,
     maxHeight: Number.MAX_SAFE_INTEGER,
     nsfw: true,
