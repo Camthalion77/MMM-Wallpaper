@@ -33,12 +33,11 @@
 }
 
 .MMM-Wallpaper .top-gradient {
-	height:100%;
-	min-width: 20%;
-	max-width: 75%;
-	left:0;
-	bottom:0;
-	padding-right: 50px;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  height: 10%;
 	background: rgba(0,0,0,0.75);
 	background: -moz-linear-gradient(left, rgba(0,0,0,0.75) 0%, rgba(0,0,0,0) 100%);
 	background: -webkit-gradient(left top, right top, color-stop(0%, rgba(0,0,0,0.75)), color-stop(100%, rgba(0,0,0,0)));
