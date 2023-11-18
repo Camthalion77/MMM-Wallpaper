@@ -7,7 +7,7 @@ Module.register("MMM-Wallpaper", {
     updateInterval: 60 * 60 * 1000,
     slideInterval: 5 * 60 * 1000,
     maximumEntries: 0,
-    filter: "grayscale(1) brightness(0,5)",
+    filter: "grayscale(0.5) brightness(0.5)",
     orientation: "auto",
     caption: false,
     crossfade: true,
