@@ -22,7 +22,7 @@ Module.register("MMM-Wallpaper", {
     width: "auto",
     height: "auto",
     flickrApiKey: "",
-    fadeEdges: true,
+    fadeEdges: false,
   },
 
   getStyles: function() {
